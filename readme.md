@@ -5,16 +5,17 @@ Para começar, clone o repositório principal e seus submódulos com o seguinte 
 
 `git clone --recurse-submodules git@github.com:GustavoGarciaPereira/teste_Verzel.git` 
 
-Após clonar, você deve ver a seguinte estrutura de diretórios ao executar `tree -L 1`:
-
-`.
+Após clonar, você deve ver a seguinte estrutura de diretórios ao executar 
+```bash
+tree -L 1:
+.
 ├── back
 ├── docker-compose.yml
 ├── front
 └── readme.md
 
 2 directories, 2 files` 
-
+```
 ## Executando o Projeto
 
 Existem duas maneiras de executar o projeto:
