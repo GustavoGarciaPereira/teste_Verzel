@@ -1,0 +1,29 @@
+
+version: '3.8'
+
+services:
+  fastapi:
+    build:
+      context: ./back
+    ports:
+      - "8000:80"
+    volumes:
+      - ./back:/app
+    depends_on:
+      - db
+
+  angular:
+    build:
+      context: ./front
+    ports:
+      - "4200:80"
+    volumes:
+      - ./front:/app
+      - /app/node_modules
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: exampledb
+      POSTGRES_USER: exampleuser
+      POSTGRES_PASSWORD: examplepass
