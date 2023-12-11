@@ -21,9 +21,9 @@ services:
       - ./front:/app
       - /app/node_modules
 
-  db:
-    image: postgres
-    environment:
-      POSTGRES_DB: exampledb
-      POSTGRES_USER: exampleuser
-      POSTGRES_PASSWORD: examplepass
+  # db:
+  #   image: postgres
+  #   environment:
+  #     POSTGRES_DB: exampledb
+  #     POSTGRES_USER: exampleuser
+  #     POSTGRES_PASSWORD: examplepass
