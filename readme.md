@@ -2,13 +2,10 @@
 
 Para começar, clone o repositório principal e seus submódulos com o seguinte comando:
 
-bashCopy code
 
 `git clone --recurse-submodules git@github.com:GustavoGarciaPereira/teste_Verzel.git` 
 
 Após clonar, você deve ver a seguinte estrutura de diretórios ao executar `tree -L 1`:
-
-bashCopy code
 
 `.
 ├── back
@@ -26,7 +23,7 @@ Existem duas maneiras de executar o projeto:
 
 Para uma execução rápida, preparei um Docker Compose que inicia ambos os projetos (front-end e back-end) simultaneamente. Na raiz do projeto, execute:
 
-bashCopy code
+
 
 `sudo docker-compose build && docker-compose up && docker-compose down` 
 
@@ -43,15 +40,12 @@ Alternativamente, você pode executar os projetos manualmente.
 
 Entre na pasta `back` e execute:
 
-bashCopy code
-
 `sudo docker-compose build && docker-compose up && docker-compose down` 
 
 #### Front-end
 
 Em seguida, entre na pasta `front` e execute:
 
-bashCopy code
 
 `npm install
 ng serve --open` 
